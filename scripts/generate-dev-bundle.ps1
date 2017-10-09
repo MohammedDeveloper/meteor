@@ -97,7 +97,7 @@ dir node
 # node-gyp (the tool that rebuilds binary node modules). #WinPy
 
 cd "$DIR"
-$py_s3_url = "https://s3.amazonaws.com/com.meteor.static/windows-python/python-${PYTHON_VERSION}.7z"
+$py_s3_url = "https://s3.amazonaws.com/com.meteor.static/windows-python/$PLATFORM/python-${PYTHON_VERSION}.7z"
 $py_archive = "${DIR}\python.7z"
 $webclient.DownloadFile($py_s3_url, $py_archive)
 & "$DIR\bin\7z.exe" x "$py_archive"
