@@ -1,7 +1,7 @@
 Import-Module "$PSScriptRoot\windows\dev-bundle-lib.psm1"
 $PLATFORM = Get-MeteorPlatform
 
-$PYTHON_VERSION = "2.7.12" # For node-gyp
+$PYTHON_VERSION = "2.7.14" # For node-gyp
 
 $script_path = Split-Path -parent $MyInvocation.MyCommand.Definition
 $CHECKOUT_DIR = Split-Path -parent $script_path
